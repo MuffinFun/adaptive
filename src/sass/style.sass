@@ -1,0 +1,784 @@
+@import "normalize1"
+@import "resets"
+
+*
+    box-sizing: border-box
+
+
+@font-face 
+    font-family: "MonsterratT"
+    src: url('../font/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "MonsterratT1"
+    src: url('../font/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+h1, h2, h3, h4, h5, h6
+    font-family: MonsterratT1
+
+p
+    font-family: MonsterratT
+
+
+
+/* переменные */
+$color-blue: #5290EA
+$color-orange: #F28B64
+$color-grey: #E2E2E2
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    position: relative
+
+.main-section
+    min-height: 800px
+    background: #f0f0f0
+    padding-top: 16px
+    padding-bottom: 0px
+    position: relative
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 67px
+        align-items: center
+    &__logo
+        width: 134px
+    &__content-container
+        display: flex
+        flex-direction: row
+        position: relative
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 80px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
+
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 16px
+        font-family: MonsterratT1
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: black
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 3
+    &__rectangle-blue
+        position: absolute
+        top: 150px
+        left: -50px
+        z-index: 1
+        width: 565.95px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64deg)
+    &__rectangle-orange
+        position: absolute
+        top: 160px
+        left: -30px
+        z-index: 2
+        width: 618.43px
+        height: 220px
+        background: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-50.81deg)
+    &__rectangle-grey
+        position: absolute
+        top: 190px
+        left: 10px
+        z-index: 0
+        width: 608.97px
+        height: 220px
+        background: $color-grey
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-36.15deg)
+
+.right-wrapper
+    width: 372px
+    position: absolute
+    z-index: 1
+    top: 150px
+    right: 76px
+    &__icon-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        font-size: 16px
+
+.icons
+    display: inline-flex
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 18px
+
+.title
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 65px
+        position: absolute
+        left: 0px
+        bottom: 0px
+        border: none
+        border: 1px solid black
+        margin: 0
+
+.title__hr
+    &_line
+        bottom: 73px
+    &_line2
+        left: 130px
+    &_line3
+        top: 69px
+
+.buttons
+    display: inline-flex
+    margin-top: 20px
+    &__main-btn
+        margin-right: 16px
+        width: 200px
+        height: 60px
+        border: none
+        background-color: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 4px 4px 0px #00000040
+        color: white
+        font-size: 15px
+        font-family: MonsterratT1
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 20px
+    &__text
+        font-size: 16px
+
+.elipse
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        background: #f0f0f0
+        border-radius: 150px
+        &_big
+            width: 188px
+            height: 188px
+
+
+.second-section
+    min-height: 700px
+    padding-top: 32px
+    padding-bottom: 20px
+    padding-left: 10px
+    padding-right: 10px
+    position: relative
+    overflow: hidden
+    &__container
+        padding-top: 25px
+        position: relative
+    &__title
+        margin-bottom: 40px
+    &__card-box
+        display: inline-flex
+        flex-direction: row
+        margin-bottom: 27px
+        z-index: 1
+    &__cards-item
+        margin-left: 8px
+        margin-right: 15px
+    &__icon-conteiner
+        width: 100%
+        display: inline-flex
+        flex-direction: row
+        padding-top: 9px
+        justify-content: space-around
+    &__icons
+        margin-right: 60px
+        justify-content: space-around
+    &__first-elipse
+        position: absolute
+        z-index: -1
+        left: -81px
+        bottom: -13px
+    &__second-elipse
+        position: absolute
+        z-index: -1
+        top: 21px
+        right: -41px
+                
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background-color: $color-grey
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 335px
+    &__text
+        width: 280px
+        font-size: 26px
+        text-align: center
+        transform: rotate(90deg) 
+        position: absolute
+        top: 144px
+        right: -30px
+    &_orange
+        background-color: $color-orange
+    &_blue
+        background-color: $color-blue 
+
+
+.content-box
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+    &__img
+        margin-right: 20px
+    &__text
+        font-size: 18px
+        &_Big
+            font-size: 48px
+            font-weight: bold
+    
+
+.third-section
+    min-height: 640px
+    background-color: #F0f0f0
+    padding-bottom: 40px
+    overflow: hidden
+    position: relative
+    &__blocks-container
+        display: flex
+        align-items: center
+        width: 100%
+        justify-content: space-between
+        padding-top: 46px
+    &__title
+        margin-bottom: 30px
+    &__second-elipse
+        position: absolute
+
+.items
+    width: 45%
+    position: relative
+    &_left
+        text-align: right
+    &__img
+        position: absolute
+        top: -40px
+        left: 40px
+    &__text
+        font-size: 18px
+    
+.elipse3
+    top: -63px
+    transform: translateY(-100px)
+    left: 118px
+    &_elipse4
+        top: 0
+        right: 0
+        transform: translate(94px, -130px)
+
+
+.footer
+    position: relative
+    &__container
+        display: flex
+        width: 100%
+        justify-content: space-around
+        align-items: left
+        position: relative
+    &__item
+        width: 47%
+        &_right
+            padding: 40px 0
+    &__title
+        margin-left: 13px
+        margin-bottom: 20px
+    &__img
+        position: absolute
+        width: 50%
+        height: 100%
+
+
+@media ( max-width: 1199px)
+    .container
+        width:  960px
+    .main-section
+        min-height: 690px
+    .left-wrapper
+        img
+            width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+        &__rectangle-orange
+            width: 550px
+            height: 200px
+        &__rectangle-grey
+            width: 500px
+            height: 200px
+    .right-wrapper
+        right: 30px
+    .main-section__first-elipse
+            right: 8px
+    .main-section__second-elipse
+            top: 560px
+    .second-section
+        min-height: 610px
+        &__icons
+            margin-right: 30px
+    .cards-item
+        width: 300px
+        height: 300px
+        &__img
+            height: 277px
+        &__text
+            top: 116px
+            right: -56px
+    .elipse3
+        top: -62px
+        left: 45px
+    .items__img
+        top: 7px
+        left: 17px
+    .title__hr_line2
+        left: 54px
+
+     
+    
+@media ( max-width: 991px)
+    .container
+        width:  720px
+    .main-section
+        min-height: 455px
+    .left-wrapper
+        img
+            width: 460px
+        &__rectangle-blue
+            width: 410px
+            height: 170px
+            top: 98px
+        &__rectangle-orange
+            width: 460px
+            height: 170px
+            top: 100px
+        &__rectangle-grey
+            width: 410px
+            height: 170px
+            top: 130px
+    .right-wrapper
+        right: -17px
+        z-index: 2
+        top: 16px
+    .main-section__first-elipse
+        top: 3px
+    .buttons__main-btn
+        width: 150px
+        height: 44px
+    .cards-item 
+        width: 221px
+        height: 232px
+        &__img
+            height: 210px
+        &__text
+            top: 96px
+            right: -78px
+    .second-section
+        min-height: 510px
+        &__icons
+            margin-right: 8px
+            justify-content: flex-start
+            &:last-child
+                margin-right: 0 
+    .content-box
+        &__img
+            margin-right: 6px
+        p
+            width: 40%
+            font-size: 16px
+            span
+                font-size: 36px
+    .title
+        font-size: 48px
+        &__hr
+            &_line
+                bottom: 50px
+            &_line2
+                left: 68px
+            &_line3
+                top: 47px
+
+
+
+@media ( max-width: 767px)
+    .container
+        width:  540px
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100vh
+        width: 50%
+        opacity: 0
+        background: #5290EA
+        z-index: 20
+        transition: 1s all
+        &__list
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+        &__list-item
+            margin-right: 0
+            font-size: 20px
+    .hamburger
+        width: 30px
+        position: fixed
+        height: 14px
+        top: 40px
+        right: 30px
+        z-index: 30
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                opacity: 0
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        opacity: 1
+        right: 0
+    .main-section
+        min-height: 370px
+    .left-wrapper
+        img
+            width: 354px
+        &__rectangle-blue
+            width: 330px
+            height: 133px
+            top: 82px
+        &__rectangle-orange
+            width: 368px
+            height: 128px
+            top: 86px
+        &__rectangle-grey
+            width: 329px
+            height: 135px
+            top: 109px
+    .right-wrapper
+        right: 32px
+        z-index: 3
+        top: -14px
+        width: 318px
+    .second-section
+        padding-top: 10px
+        min-height: 370px
+        &__icons
+            margin-right: 5px
+        &__card-box
+            margin-bottom: 10px
+        &__iceon-container
+            justify-content: space-between
+        &__cards-item
+            margin-left: 10px
+    .cards-item
+        width: 160px
+        height: 190px
+        &__img
+            height: 162px
+        &__text
+            top: 73px
+            right: -109px
+            font-size: 24px
+    .content-box
+        &__img
+            width: 50px
+            height: 50px
+            margin-right: 2px
+        p
+            font-size: 13px
+            span
+                font-size: 25px
+    .third-section
+        min-height: 510px
+        &__blocks-container
+            padding-top: 30px
+    .items
+        &__text
+            font-size: 15px
+    .buttons
+        flex-wrap: wrap
+        justify-content: space-evenly
+        &__main-btn
+            margin-bottom: 10px
+        &__icon-btn
+            align-items: center
+    .title__hr_line2
+        left: 5px
+    .footer
+        position: relative
+        &__item
+            width: 300px
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-start
+            padding: 20px 0
+        &__img
+            bottom: 0
+            position: absolute
+            z-index: 30
+    .title__hr_line3
+        left: 1px
+        top: 47px
+
+
+
+@media ( max-width: 575px)
+    .container
+        width:  100%
+    .left-wrapper
+        &__img
+            display: none
+        &__rectangle-blue
+            z-index: 2
+            transform: rotate(233deg)
+            top: 111px
+            left: -26px
+        &__rectangle-orange
+            z-index: 3
+            left: 21px
+            transform: rotate(270deg)
+        &__rectangle-grey
+            z-index: 1
+            left: 101px
+            top: 105px
+            transform: rotate(309deg)
+    .right-wrapper
+        display: flex
+        flex-direction: column
+        z-index: 3
+        top: 14px
+        width: 80%
+        align-items: center
+    .second-section
+        &__card-box
+            flex-wrap: wrap
+            justify-content: center
+        &__icon-conteiner
+            flex-wrap: wrap
+            justify-content: space-around
+        &__icons
+            margin-bottom: 20px
+        &_container 
+            display: inline-block
+            text-align: center
+        &__title
+            display: inline-flex
+    .cards-item
+        margin-left: 15px
+        margin-right: 15px
+        margin-bottom: 20px
+    .items
+        width: 75%
+        &_left
+            display: none
+        &__text
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+    .third-section
+        min-height: 405px
+        &__blocks-container
+            display: flex
+            justify-content: center
+        &__title
+            text-align: center
+    .buttons__main-btn
+        margin-left: 16px
+        margin-right: 16px
+    .title
+        text-align: center
+    .title__hr
+        &_line
+            bottom: 48px
+            left: 33px
+        &_line3
+            left: 16px
+            top: 47px
+        &_line4
+            left: 0px
+    .footer
+        &__img
+            display: none
+        &__container
+            min-height: 152px
+        &__item
+            &_right
+                position: absolute
+                width: 100%
+                justify-content: center
+    .right-wrapper__text
+        text-align: center
+    .third-section__text1
+        text-align: center
+
+
+@media ( max-width: 400px)
+    .container
+        width:  100%
+    .left-wrapper
+        top: 27px
+        left: -76px
+        &__rectangle-blue
+            z-index: 2
+            transform: rotate(90deg)
+            top: 111px
+            left: -26px
+        &__rectangle-orange
+            z-index: 3
+            left: 21px
+            transform: rotate(90deg)
+        &__rectangle-grey
+            z-index: 1
+            left: 101px
+            top: 105px
+            transform: rotate(90deg)
+    .title
+        text-align: center
+    .main-section
+        min-height: 380px
+        &__content-container
+            justify-content: center
+            width: 100%
+        &__first-elipse
+            display: none
+    .right-wrapper 
+        display: flex
+        position: relative
+        flex-direction: column
+        align-items: flex-start
+        right: 5px
+        z-index: 3
+        top: 14px
+        width: 70%
+        align-items: center
+    .right-wrapper__text
+        text-align: center
+    .second-section
+        &_container 
+            display: inline-block
+            text-align: center
+        &__title
+            display: inline-flex
+    .third-section__text1
+        text-align: center
+    .title__hr
+        &_line
+            bottom: 48px
+            left: 33px
+        &_line3
+            left: 10px
+            top: 47px
+        &_line4
+            left: 0px
+
+
+    
+
+@media ( max-width: 360px)
+    .title
+        text-align: center
+        font-size: 40px
+    .container
+        width:  100%
+    .second-section
+        &__card-box
+            padding-right: 0
+            width: 100%
+            flex-direction: column
+            align-items: center
+    .right-wrapper__text
+        text-align: center
+    .third-section__text1
+        text-align: center
+    .cards-item
+        margin-left: 0
+        margin-right: 0
+    .main-section
+        &__content-container
+            justify-content: center
+    .second-section
+        &_container 
+            display: inline-block
+            text-align: center
+        &__title
+            display: inline-flex
+    .title__hr
+        &_line
+            bottom: 39px
+            left: 27px
+        &_line3
+            left: 15px
+            top: 39px
+        &_line4
+            left: 0px
